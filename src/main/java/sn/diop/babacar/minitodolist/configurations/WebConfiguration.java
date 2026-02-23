@@ -8,6 +8,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
 
+    /**
+     * Configure le mappage CORS pour l'application.
+     * Autorise les requêtes de http://localhost:4200 et spécifie les méthodes et
+     * en-têtes HTTP autorisés.
+     *
+     * @return un WebMvcConfigurer avec les mappages CORS
+     */
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {

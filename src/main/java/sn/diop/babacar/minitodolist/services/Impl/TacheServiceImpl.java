@@ -59,6 +59,12 @@ public class TacheServiceImpl implements TacheService {
                 .map(tacheMapper::asDto);
     }
 
+    /**
+     * Construit le prédicat de recherche basé sur les paramètres fournis.
+     *
+     * @param searchParams   la map des filtres de recherche
+     * @param booleanBuilder le BooleanBuilder Querydsl à peupler
+     */
     private void buildSearch(Map<String, String> searchParams, BooleanBuilder booleanBuilder) {
         if (Objects.nonNull(searchParams)) {
             var qEntity = QTacheEntity.tacheEntity;
