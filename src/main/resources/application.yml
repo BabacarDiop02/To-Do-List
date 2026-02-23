@@ -1,0 +1,35 @@
+server:
+  port: 7070
+
+  servlet:
+    context-path: /todo-api
+    error:
+      include-message: always
+      include-binding-errors: always
+      include-stacktrace: always
+      include-exception: false
+
+spring:
+  profiles:
+    active: default
+  datasource:
+    name: ${DB_NAME:todo_list_db}
+    host: ${DB_HOST:127.0.0.1}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:Diop@1998}
+    url: jdbc:postgresql://${spring.datasource.host}:5432/${spring.datasource.name}
+
+  jpa:
+    hibernate:
+      properties:
+        hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: update
+    show-sql: false
+
+
+springdoc:
+  api-docs:
+    version: OPENAPI_3_0
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
