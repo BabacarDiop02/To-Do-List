@@ -26,7 +26,6 @@ spring:
       ddl-auto: update
     show-sql: false
 
-
 springdoc:
   api-docs:
     version: OPENAPI_3_0

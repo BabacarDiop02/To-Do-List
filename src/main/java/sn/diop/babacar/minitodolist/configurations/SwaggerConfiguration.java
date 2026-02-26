@@ -16,7 +16,7 @@ public class SwaggerConfiguration {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Mini Todo List API")
+                        .title("Mini To-do List API")
                         .version("v1.0.0"));
     }
 }

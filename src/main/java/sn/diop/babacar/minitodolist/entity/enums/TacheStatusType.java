@@ -43,7 +43,7 @@ public enum TacheStatusType {
      *
      * @param tacheStatusType la valeur à convertir
      * @return l'instance correspondante de TacheStatusType
-     * @throws IllegalArgumentException si la valeur ne correspond à aucun statut
+     * @throws IllegalArgumentException si la valeur ne correspond à aucun statut.
      */
     @JsonCreator(mode = JsonCreator.Mode.DELEGATING)
     public static TacheStatusType fromValue(Object tacheStatusType) {

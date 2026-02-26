@@ -3,7 +3,6 @@ package sn.diop.babacar.minitodolist.services;
 import sn.diop.babacar.minitodolist.model.TacheDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
 import java.util.Map;
 
 public interface TacheService {

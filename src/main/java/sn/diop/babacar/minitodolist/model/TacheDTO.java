@@ -6,7 +6,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import sn.diop.babacar.minitodolist.entity.enums.TacheStatusType;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.*;
-
 import java.io.Serializable;
 
 @NoArgsConstructor

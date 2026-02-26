@@ -6,6 +6,7 @@ import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TacheRepository extends JpaRepository<TacheEntity, Long>, QuerydslPredicateExecutor<TacheEntity> {
+public interface TacheRepository extends
+        JpaRepository<TacheEntity, Long>, QuerydslPredicateExecutor<TacheEntity> {
 
 }

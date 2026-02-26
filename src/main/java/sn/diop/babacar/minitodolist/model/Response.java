@@ -21,7 +21,7 @@ public class Response<T> {
     private Object message;
 
     /**
-     * Crée une réponse avec un statut 400 Mauvaise Requête (Bad Request).
+     * Crée une réponse avec un statut 400 Mauvaise Requête.
      *
      * @param <T> le type du contenu de la réponse
      * @return un objet Response avec le statut BAD_REQUEST

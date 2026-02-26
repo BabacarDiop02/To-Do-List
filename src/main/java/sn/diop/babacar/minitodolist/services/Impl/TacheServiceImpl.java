@@ -40,7 +40,7 @@ public class TacheServiceImpl implements TacheService {
     @Override
     public void deleteTache(Long id) {
         if (!tacheRepository.existsById(id)) {
-            throw new RuntimeException("Tache not found");
+            throw new RuntimeException("aucun tache trover");
         }
         tacheRepository.deleteById(id);
     }

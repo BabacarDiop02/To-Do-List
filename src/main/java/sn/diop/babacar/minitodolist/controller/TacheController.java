@@ -30,10 +30,10 @@ public class TacheController {
      * @param tacheDTO les données de la tâche à créer
      * @return une réponse contenant la tâche créée ou un message d'erreur
      */
-    @Operation(summary = "Créer une tâche", description = "ce point de terminaison prend une tâche en entrée et l'enregistre")
+    @Operation(summary = "Créer une tâche", description = "ce point de terminaison prend une tâche en entrée et l'enregistre.")
     @ApiResponses(value = { @ApiResponse(responseCode = "201", description = "Succès"),
-            @ApiResponse(responseCode = "400", description = "La requête envoyée par le client est incorrecte"),
-            @ApiResponse(responseCode = "500", description = "Erreur interne du serveur lors du traitement de la requête") })
+            @ApiResponse(responseCode = "400", description = "La requête envoyée par le client est incorrecte."),
+            @ApiResponse(responseCode = "500", description = "Erreur interne du serveur lors du traitement de la requête.") })
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     public Response<Object> createTache(@RequestBody TacheDTO tacheDTO) {
